@@ -8,9 +8,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <!-- Script Hamburger Menu -->
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav ul");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
 <body>
   <!-- Background Artistic Elements -->
   <div class="bg-images">
@@ -296,5 +308,6 @@ progress.addEventListener("input", () => {
   </script>
 </body>
 </html>
+
 
 
