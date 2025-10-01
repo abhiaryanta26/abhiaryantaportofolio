@@ -448,3 +448,25 @@ header .logo {
   flex-wrap: wrap;
   gap: 2rem;
 }
+/* ================= CONTACT / CV SECTION ================= */
+.contact-cv {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: rgba(0, 0, 0, 0.6); /* hitam transparan */
+  color: #fff;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact-cv h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.contact-cv p {
+  margin-bottom: 3rem;
+  font-size: 1.05rem;
+  color: #ccc; /* abu-abu lebih soft */
+}
