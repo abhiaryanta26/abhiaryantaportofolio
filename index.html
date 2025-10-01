@@ -278,6 +278,145 @@ progress.addEventListener("input", () => {
   audio.currentTime = (progress.value / 100) * audio.duration;
 });
 </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Putu Abhi Aryanta</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* RESET */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    
+
+   
+   ;
+    
+
+   
+
+    /* CONTACT / CV SECTION */
+    .contact-cv {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: rgba(214, 26, 26, 0.6); /* transparan di atas bg artistik */
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      margin: 3rem auto;
+      width: min(90%, 800px);
+    }
+    .contact-cv h2 {
+      font-size: 2.2rem;
+      margin-bottom: 0.8rem;
+      letter-spacing: 1px;
+    }
+    .contact-cv p {
+      margin-bottom: 3rem;
+      font-size: 1.05rem;
+      color: #aaa;
+    }
+    .cv-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .cv-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all 0.35s ease;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+    .cv-btn .icon {
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      padding: 0.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cv-btn .icon svg {
+      width: 22px; height: 22px; fill: #fff;
+    }
+    .cv-btn.linkedin {
+      background: linear-gradient(135deg, #0077b5, #00a0dc);
+    }
+    .cv-btn.linkedin:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,119,181,0.6);
+    }
+    .cv-btn.cv {
+      background: linear-gradient(135deg, #e63946, #ff4757);
+    }
+    .cv-btn.cv:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(230,57,70,0.6);
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <!-- CONTACT / CV SECTION -->
+  <section class="contact-cv" data-aos="fade-up">
+    <h2>Let's Connect</h2>
+    <p>Temukan saya di LinkedIn atau unduh CV saya untuk mengetahui lebih banyak.</p>
+    <div class="cv-links">
+      <a href="https://www.linkedin.com/in/username" target="_blank" class="cv-btn linkedin">
+        <div class="icon">
+          <!-- LinkedIn Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452H16.9v-5.569c0-1.328-.025-3.041-1.854-3.041-1.854 
+            0-2.139 1.448-2.139 2.944v5.666h-3.548V9h3.409v1.561h.049c.475-.9 
+            1.637-1.854 3.369-1.854 3.601 0 4.268 2.37 
+            4.268 5.455v6.29zM5.337 7.433c-1.146 
+            0-2.073-.928-2.073-2.073 0-1.146.928-2.073 
+            2.073-2.073s2.073.928 2.073 2.073c0 
+            1.146-.927 2.073-2.073 2.073zM7.119 
+            20.452H3.554V9h3.565v11.452zM22.225 
+            0H1.771C.792 0 0 .774 0 
+            1.729v20.542C0 23.226.792 24 1.771 
+            24h20.451C23.2 24 24 23.226 24 
+            22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+          </svg>
+        </div>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="CV_PutuAbhiAryanta.pdf" target="_blank" class="cv-btn cv">
+        <div class="icon">
+          <!-- CV Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 2h9l5 5v13a2 2 0 0 1-2 
+            2H6a2 2 0 0 1-2-2V4c0-1.104.896-2 
+            2-2zm7 7V3.5L18.5 9H13z"/>
+          </svg>
+        </div>
+        <span>Download CV</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
+
 
 
   <!-- Footer -->
