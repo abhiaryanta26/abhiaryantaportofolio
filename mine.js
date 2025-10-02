@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.classList.toggle("toggle");
   });
 
-  // Tutup nav otomatis kalau link diklik
+  // Tutup menu setelah klik link
   nav.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
       nav.classList.remove("nav-active");
@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // =====================
-// Music Player Responsive Fix
+// Music Player Responsive
 // =====================
-window.addEventListener("resize", () => {
+function resizeMusicPlayer() {
   const player = document.querySelector(".music-player");
   if (!player) return;
 
@@ -46,7 +46,7 @@ window.addEventListener("resize", () => {
     player.style.flexDirection = "row";
     player.style.alignItems = "center";
   }
-});
+}
 
-// Panggil sekali biar langsung jalan
-window.dispatchEvent(new Event("resize"));
+window.addEventListener("resize", resizeMusicPlayer);
+window.addEventListener("DOMContentLoaded", resizeMusicPlayer);
